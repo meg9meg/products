@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hello {
+  background-image: url("../nav_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
+
+.hello .welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .hello .welcome {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hello .welcome {
+    font-size: 30px;
+  }
+}
+
+.filter {
+  width: 100%;
+  min-height: 10vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter select {
+  font-size: 16px;
+  line-height: 42px;
+  display: inline-block;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced1df;
+  border-radius: 8px;
+  background-color: #eeeff1;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .filter select {
+    font-size: 12px;
+    line-height: 22px;
+    width: 80%;
+  }
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.products .product {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .products .product {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products .product {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+.products .product .product-image {
+  position: relative;
+  display: block;
+}
+
+.products .product .product-image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products .product .product-image .categories {
+  position: absolute;
+  color: #fff;
+  top: 15px;
+  left: 0px;
+  text-transform: capitalize;
+}
+
+.products .product .product-image .categories .category {
+  background-color: #42b883;
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  left: 0;
+}
+
+.products .product .product-image .discount-area .discount {
+  position: absolute;
+  padding: 16px 16px;
+  background-color: black;
+  color: #fff;
+  top: 15px;
+  right: 15px;
+  text-transform: capitalize;
+  border-radius: 50%;
+}
+
+.products .product .product-details {
+  padding: 16px 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  border-radius: 0px 0px 8px 8px;
+  color: black;
+  text-align: center;
+}
+
+.products .product .product-details .name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.products .product .product-details hr {
+  background-color: green;
+  text-align: center;
+  height: 1px;
+  width: 20%;
+  margin: auto;
+}
+
+.products .product .product-details .price {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.products .product .product-details .prev-price {
+  color: darkgray;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=main.css.map */
