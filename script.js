@@ -1,7 +1,7 @@
 $.ajax({
     type : 'GET',
     dataType : 'json',
-    url: '/plant_database.json',
+    url: 'https://meg9meg.github.io/products/plant_database.json',
     success : function(data) {      
         $.each(data, function(index, obj){
             let cat = ``;
@@ -39,10 +39,6 @@ $.ajax({
     } 
 });
 
-$(".recomended").click(function(){
-    
-}); 
-
 
 $('#filters').change(function () { 
    console.log($(this).val());
@@ -52,7 +48,7 @@ $('#filters').change(function () {
    $.ajax({
    type : 'GET',
    dataType : 'json',
-   url: '/plant_database.json',
+   url: 'https://meg9meg.github.io/products/plant_database.json',
    success : function(data) { 
        $.each(data, function(index, obj){
            if (obj.status.includes(select) || select === "") {
