@@ -70,7 +70,6 @@
   .filter select {
     font-size: 12px;
     line-height: 22px;
-    width: 80%;
   }
 }
 
@@ -89,8 +88,10 @@
 }
 
 .products .product {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  width: 400px;
+  height: 500px;
+  margin-left: 30px;
+  margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +104,7 @@
           justify-content: center;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 1000px) {
